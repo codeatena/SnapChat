@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:corner_radius="15dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean a plate for a Palmolive"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.palmolive.com"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/popuplink_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Link"
+            fancy:fb_defaultColor="#9c73b2"
+            fancy:fb_radius="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
+
+        <Button
+            android:id="@+id/popupdismiss_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISMISS"
+            android:textColor="#9c73b2"
+            android:background="@android:color/transparent"/>
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/www"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
